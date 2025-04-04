@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Merhaba!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #0e0e10;
+      color: #f1f1f1;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      overflow: auto;
+    }
+
+    img.icon {
+      width: 120px;
+      height: 120px;
+      border-radius: 16px;
+      margin-bottom: 20px;
+      animation: fadeIn 1s ease;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      animation: fadeIn 1.5s ease;
+    }
+
+    p {
+      max-width: 600px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      animation: fadeIn 2s ease;
+    }
+
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      animation: fadeIn 2.5s ease;
+    }
+
+    a.button {
+      text-decoration: none;
+      padding: 12px 24px;
+      background: #1e1e22;
+      border: 1px solid #444;
+      color: #f1f1f1;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    a.button:hover {
+      background: #6e40c9;
+      border-color: #6e40c9;
+      transform: scale(1.05);
+    }
+
+    .discord-tag {
+      position: fixed;
+      bottom: 15px;
+      right: 20px;
+      font-size: 0.95rem;
+      color: #888;
+      font-family: monospace;
+      opacity: 0.8;
+      z-index: 1000;
+      animation: fadeIn 2.5s ease;
+    }
+
+    .discord-tag:hover {
+      color: #b18fff;
+      opacity: 1;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+        padding: 0 10px;
+      }
+
+      .buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      a.button {
+        width: 80%;
+        text-align: center;
+      }
+
+      img.icon {
+        width: 90px;
+        height: 90px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="icon.jpg" alt="icon" class="icon" />
+  <h1>Merhaba, Ben Doğu.</h1>
+  <p>
+    Yazılımı seven birisiyim ve bu konuda çalışmalar yapıyorum.  
+    Python, Lua, Batch, Visual Basic Script, Bash gibi dilleri biliyorum.  
+    Hepsine çok fazla yatkın olmasam da kendimi geliştirmeye çalışıyorum.
+  </p>
+
+  <div class="buttons">
+    <a href="https://github.com/d0gu77" class="button" target="_blank">GitHub</a>
+    <a href="mailto:d0gu77@proton.me" class="button">İletişim</a>
+  </div>
+
+  <div class="discord-tag">Discord: @.dogus.</div>
+</body>
+</html>
